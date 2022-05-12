@@ -6,6 +6,7 @@
 <!-- *Navigation Bar -->
 <!-- *Main Content -->
 <!-- *Footer -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,10 +22,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  /><!-- Import Jquery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Import Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
@@ -67,7 +66,7 @@
                     alt="">
             </div>
         </div>
-        <!-- Face Card End -->
+        <!-- Face Card Ends -->
         <br>
         <br>
         <!-- Short Intro -->
@@ -75,7 +74,14 @@
             <h1 class="skill text-7xl animate__animated animate__fadeInDown">Who am I?</h1>
             <h1>I am a DEV</h1>
         </div>
-        </div>
+    </div>
+    <script>
+        $(window).resize(function() {
+        if ($(window).width() < 960) {
+            document.write("<h1>Please use a larger screen</h1>");
+        }
+        });
+    </script>
 </body>
 
 </html>
