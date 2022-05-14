@@ -28,6 +28,7 @@
 </head>
 
 <body>
+    <div class="snap-y snap-mandatory body-Wrapper scroll-smooth">
     <!-- Nav Bar Start -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Hrushal <b class="text-fuchsia-500">Nikhare</b></a>
@@ -56,7 +57,7 @@
     <!-- Nav Bar End -->
     <!--! Main Start -->
     <!-- Face Card -->
-    <div class="text-slate-50 text-center bgcov">
+    <div class="text-slate-50 text-center bgcov snap-center ">
         <div class="FaceCard">
             <img src="BACK.svg" class="Faceimg" alt="ooo pretty SVG">
             <div class="IntroText">
@@ -70,12 +71,33 @@
         <br>
         <br>
         <!-- Short Intro -->
-        <div class="SI h-screen">
-            <h1 class="skill text-7xl animate__animated animate__fadeInLeft">Who am I?</h1>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="SI h-screen snap-center ">
+            <h1 class="skill text-7xl animate__animated animate__fadeInLeft ">Who am I?</h1>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br>
             <h1 class="skill text-4xl animate__animated animate__fadeInLeft animate__delay-1s">I am Hrushal Nikhare, a High School Student currently in 9th grade who is a Budding Scientist,Programmer,Cycling Enthusiast who constantly strives to explore my interests in science & programming.</h1>
         </div>
+        <!-- Short Intro Ends -->
+        <!-- Skills --> 
+        <div class="Skills snap-center h-screen">
+            <h1 class="skill text-7xl animate__animated animate__fadeInTopLeft">Skills</h1>
+            <br><br><br><br><br><br><br><br><br>
+            <h1 class="skill text-4xl animate__animated animate__fadeInTopRight animate__delay-1s">
+                <ul>
+                    <li>Intermediate Python</li>
+                    <br>
+                    <li>Fast Learner</li>
+                    <br>
+                    <li>Robotics</li>
+                    <br>
+                    <li>Web Development</li>
+                    <br>
+                    <li>Logical Reasoner</li>
+                    <br>
+                </ul>
+            </h1>
+        </div>
     </div>
+
     <script>
         $(window).resize(function() {
         if ($(window).width() < 960) {
@@ -83,6 +105,7 @@
         }
         });
     </script>
+    </div>
 </body>
 
 </html>
