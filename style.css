@@ -87,9 +87,12 @@ p, h1, h2, h3, h4, h5, h6 {
 .Meg{
     font-family: 'Megrim', cursive;
 }
+.navbar{
+    z-index: 99;
+}
 .FaceCard .IntroText{
     position: absolute;
-    z-index: 999;
+    z-index: 1;
     margin: 0 auto;
     left: 0;
     right: 0;        
