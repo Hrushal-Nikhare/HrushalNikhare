@@ -92,11 +92,23 @@ p, h1, h2, h3, h4, h5, h6 {
     top: 40%; /* Adjust this value to move the positioned div up and down */
     font-family: Arial,sans-serif;
     color: #fff;
-    width: 35%; /* Set the width of the positioned div */
+    /* width: 35%; Set the width of the positioned div */
 	-webkit-animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
-
+/* 
+Color Theme
+#001220
+#393E46
+#00d0db
+#eeff00
+*/
+.blue-highlight{
+    color:#00d0db;
+}
+.yellow-highlight{
+    color:#eeff00;
+}
 body{
     overflow-x: hidden;
 }
