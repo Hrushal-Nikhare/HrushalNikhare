@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@tailwind variants;
+
+@tailwind screens;
+
+/* Command:
+    npx tailwindcss -c ./tailwind.config.js -i style.css 
+-o Tailwind.css
+*/
 /*
     1. Use a more-intuitive box-sizing model.
 */
