@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Tailwind.css">
+    <title>You are offline</title>
+
+    <style>
+        .yea {
+            color: white;
+            background-color: #283136;
+            font-size: xx-large;
+        }
+
+        button {
+            background-color: #283136;
+            color: white;
+            font-size: large;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid white;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Offline</h1>
+    <div class="text-center h-screen w-screen yea">
+
+
+        <h1>You are offline</h1>
+        <p>
+            Please connect to the internet and try again.
+        </p>
+        <button onclick="window.location.reload()">
+            Refresh
+        </button>
+    </div>
+    <script>
+        // Manual reload feature.
+        document.querySelector("button").addEventListener("click", () => {
+            window.location.reload();
+        });
+
+        // Listen to changes in the network state, reload when online.
+        // This handles the case when the device is completely offline.
+        window.addEventListener('online', () => {
+            window.location.reload();
+        });
+
+        // Check if the server is responding and reload the page if it is.
+        // This handles the case when the device is online, but the server
+        // is offline or misbehaving.
+        async function checkNetworkAndReload() {
+            try {
+                const response = await fetch('.');
+                // Verify we get a valid response from the server
+                if (response.status >= 200 && response.status < 500) {
+                    window.location.reload();
+                    return;
+                }
+            } catch {
+                // Unable to connect to the server, ignore.
+            }
+            window.setTimeout(checkNetworkAndReload, 2500);
+        }
+
+        checkNetworkAndReload();
+    </script>
 </body>
+
 </html>
