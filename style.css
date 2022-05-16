@@ -262,8 +262,7 @@ body {
   }
   .anim-typewriter {
     animation: none;
-  }
-  .anim-typewriter::after {
     content: "Hrushal Nikhare";
   }
+
 }
