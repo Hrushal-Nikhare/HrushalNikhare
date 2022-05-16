@@ -983,4 +983,13 @@ body {
     -webkit-animation: none;
     animation: none;
   }
+
+  .anim-typewriter {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .anim-typewriter::after {
+    content: "Hrushal Nikhare";
+  }
 }

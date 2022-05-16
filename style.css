@@ -260,5 +260,10 @@ body {
     -webkit-animation: none;
     animation: none;
   }
-  
+  .anim-typewriter {
+    animation: none;
+  }
+  .anim-typewriter::after {
+    content: "Hrushal Nikhare";
+  }
 }
