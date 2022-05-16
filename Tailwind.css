@@ -672,6 +672,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @tailwind variants;
 
 @media (min-width: 640px){
+  .sm\:w-screen{
+    width: 100vw;
+  }
+
   .sm\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -987,9 +991,6 @@ body {
   .anim-typewriter {
     -webkit-animation: none;
             animation: none;
-  }
-
-  .anim-typewriter::after {
     content: "Hrushal Nikhare";
   }
 }
