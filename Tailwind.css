@@ -518,16 +518,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 0;
 }
 
-.visible{
-  visibility: visible;
-}
-
-.fixed{
-  position: fixed;
-}
-
-.absolute{
-  position: absolute;
+.m-1{
+  margin: 0.25rem;
 }
 
 .my-2{
@@ -539,16 +531,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.mb-4{
+  margin-bottom: 1rem;
+}
+
 .flex{
   display: flex;
 }
 
 .contents{
   display: contents;
-}
-
-.hidden{
-  display: none;
 }
 
 .h-screen{
@@ -597,6 +589,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 18 32 / var(--tw-bg-opacity));
 }
 
+.p-4{
+  padding: 1rem;
+}
+
+.p-3{
+  padding: 0.75rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -623,6 +623,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-slate-50{
   --tw-text-opacity: 1;
   color: rgb(248 250 252 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .shadow{
@@ -977,10 +982,5 @@ body {
   .IntroText {
     -webkit-animation: none;
     animation: none;
-  }
-
-  .anim-typewriter {
-    -webkit-animation: none;
-            animation: none;
   }
 }
