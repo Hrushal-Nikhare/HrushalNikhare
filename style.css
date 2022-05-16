@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 @tailwind base;
 
 @tailwind components;
@@ -242,7 +243,7 @@ body {
     width: 0;
   }
   to {
-    width: 30%;
+    width: 40%;
   }
 }
 @keyframes blinkTextCursor {
