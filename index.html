@@ -60,8 +60,8 @@
         <!-- Face Card -->
         <div class="text-slate-50 text-center bg-[#001220] snap-center ">
             <div class="FaceCard sm:w-screen">
-                <img src="BACK.svg" class="Landing" alt="ooo pretty SVG">
-                <div class="IntroText">
+                <img src="BACK.svg" id="Pls" class="Landing" alt="ooo pretty SVG">
+                <div class="IntroText" id="IntroText">
                     <h1 class="text-7xl md:text-5xl sm:text-3xl">Hello! I am</h1>
                     <br>
                     <br>
@@ -220,14 +220,16 @@
                     navigator.serviceWorker.register('service-worker.js');
                 }
             });
-        </script>
-        <!-- <script>
+
             $(window).resize(function() {
             if ($(window).width() < 960) {
-                document.write("<h1>Please use a larger screen</h1>");
+            // Get the element With ID 'Pls' and change its src to Back2.svg
+            $('#Pls').attr('src', 'Back2.svg');
+            //Now get the element with ID 'IntroText' and remove it
+            $('#IntroText').remove();
             }
             }); 
-        </script> -->
+        </script>
     </div>
 </body>
 
