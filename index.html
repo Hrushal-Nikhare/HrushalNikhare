@@ -4,10 +4,9 @@
 <!-- 
 TODO:
     * Navbar
-    * Desktop overflow
     * Achievements in tabular form
-    * Typewrite animation fix 
 -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,8 +18,12 @@ TODO:
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <!-- Import bootstrap,Tailwind css,animate.style,Font awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous"/> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css"
+        integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -34,12 +37,12 @@ TODO:
     <script src="Script.js"></script>
     <div class="snap-y snap-mandatory body-Wrapper scroll-smooth overflow-y-auto">
         <!-- Nav Bar Start -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Hrushal <b class="text-fuchsia-500">Nikhare</b></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
@@ -52,10 +55,6 @@ TODO:
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-                <!-- <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
             </div>
         </nav>
         <!-- Nav Bar End -->
@@ -70,7 +69,8 @@ TODO:
                     <br>
                     <!-- <h1 class="line-1 anim-typewriter text-[75px] m:text-9xl Meg"><b>Hrushal Nikhare</b></h1> -->
                     <h1>
-                        <h1 class="typewrite text-6xl xl:text-9xl Meg" data-period="2000" data-type='[ "Hi, Im Hrushal", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+                        <h1 class="typewrite text-6xl xl:text-9xl Meg" data-period="2000"
+                            data-type='[ "Hi, Im Hrushal", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
                             <span class="wrap"></span>
                         </h1>
                     </h1>
@@ -127,7 +127,7 @@ TODO:
                         <li><a href="Hrushal Nikhare_Micro_Learning_Module_Certificate.png">Certificate of
                                 participation(From Intel):Demystify AI</a></li>
                         <br>
-                                <li> <a
+                        <li> <a
                                 href="https://www.freecodecamp.org/certification/Shiny_Eevee/scientific-computing-with-python-v7">
                                 Certificate of Completion(From FreeCodeCamp.org): Scientific computing with Python</a>
                         </li>
@@ -199,11 +199,11 @@ TODO:
                         <!-- <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!"
                             role="button"><i class="fab fa-linkedin-in"></i></a> -->
                         <!-- Github -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="https://github.com/Hrushal-Nikhare"
-                            role="button"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333"
+                            href="https://github.com/Hrushal-Nikhare" role="button"><i class="fab fa-github"></i></a>
                         <!-- CV -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="Hrushal Nikhare Resume.pdf"
-                            role="button"><i class="fa-solid fa-id-card"></i></a>
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333"
+                            href="Hrushal Nikhare Resume.pdf" role="button"><i class="fa-solid fa-id-card"></i></a>
                     </section>
                     <!-- Section: Social media -->
 
@@ -240,7 +240,6 @@ TODO:
             //     document.getElementById('Pls').src = 'BACK2.svg';
             //     document.getElementById('IntroText').remove();
             // }
-            
         </script>
     </div>
 </body>

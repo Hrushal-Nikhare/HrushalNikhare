@@ -129,9 +129,7 @@ h6 {
   font-family: "Megrim", cursive;
 }
 
-.navbar {
-  z-index: 99;
-}
+
 
 .FaceCard .IntroText {
   position: absolute;

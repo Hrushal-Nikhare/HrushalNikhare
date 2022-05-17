@@ -535,6 +535,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1rem;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -822,10 +826,6 @@ h6 {
 
 .Meg {
   font-family: "Megrim", cursive;
-}
-
-.navbar {
-  z-index: 99;
 }
 
 .FaceCard .IntroText {
