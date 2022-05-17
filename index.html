@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- 
+TODO:
+    * Navbar
+    * Desktop overflow
+    * Achievements in tabular form
+    * Typewrite animation fix 
+-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +19,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <!-- Import bootstrap,Tailwind css,animate.style,Font awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,6 +31,7 @@
 </head>
 
 <body>
+    <script src="Script.js"></script>
     <div class="snap-y snap-mandatory body-Wrapper scroll-smooth overflow-y-auto">
         <!-- Nav Bar Start -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -52,14 +61,19 @@
         <!-- Nav Bar End -->
         <!--! Main Start -->
         <!-- Face Card -->
-        <div class="text-slate-50 text-center bg-[#001220] snap-center ">
+        <div class="text-slate-50 text-center bg-[#001220] snap-center">
             <div class="FaceCard sm:w-screen">
                 <img src="BACK.svg" id="Pls" class="Landing" alt="ooo pretty SVG">
                 <div class="IntroText" id="IntroText">
-                    <h1 class="text-7xl md:text-5xl sm:text-3xl">Hello! I am</h1>
+                    <!-- <h1 class="text-7xl md:text-5xl sm:text-3xl">Hello! I am</h1> -->
                     <br>
                     <br>
-                    <h1 class="line-1 anim-typewriter text-[75px] m:text-9xl Meg"><b>Hrushal Nikhare</b></h1>
+                    <!-- <h1 class="line-1 anim-typewriter text-[75px] m:text-9xl Meg"><b>Hrushal Nikhare</b></h1> -->
+                    <h1>
+                        <h1 href="" class="typewrite text-[75px] m:text-9xl Meg" data-period="2000" data-type='[ "Hi, Im Hrushal Nikhare", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+                            <span class="wrap"></span>
+                        </h1>
+                    </h1>
                     <br>
                 </div>
             </div>
@@ -153,7 +167,7 @@
             </div> -->
             <!-- Links Ends -->
             <!-- Footer -->
-            <footer class="bg-dark text-center text-white">
+            <footer class="bg-dark text-center snap-centertext-white">
                 <!-- Grid container -->
                 <div class="container p-4">
 
@@ -215,10 +229,10 @@
                 }
             });
             // If the Device is a phone Get the element With ID 'Pls' and change its src to BACK2.svg and Now get the element with ID 'IntroText' and remove it
-            if (window.innerWidth < 1025) {
-                document.getElementById('Pls').src = 'BACK2.svg';
-                document.getElementById('IntroText').remove();
-            }
+            // if (window.innerWidth < 1025) {
+            //     document.getElementById('Pls').src = 'BACK2.svg';
+            //     document.getElementById('IntroText').remove();
+            // }
             
             // $(window).resize(function() {
             // if ($(window).width() < 960) {

@@ -625,11 +625,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(248 250 252 / var(--tw-text-opacity));
 }
 
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -861,6 +856,11 @@ body {
   overflow-x: hidden;
 }
 
+.body-Wrapper{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 .background {
   background-color: #001220;
 }
@@ -898,99 +898,5 @@ body {
   100% {
     transform: translateZ(0);
     opacity: 1;
-  }
-}
-
-.typewriter h1 {
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em;
-  /* Adjust as needed */
-  -webkit-animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-          animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-/* Google Fonts */
-
-.line-1 {
-  position: relative;
-  top: 50%;
-  width: 24em;
-  margin: 0 auto;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
-  /* font-size: 180%; */
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%);
-}
-
-/* Animation */
-
-.anim-typewriter {
-  -webkit-animation: typewriter 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms steps(44) infinite normal;
-          animation: typewriter 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms steps(44) infinite normal;
-}
-
-@-webkit-keyframes typewriter {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 40%;
-  }
-}
-
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 40%;
-  }
-}
-
-@-webkit-keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-
-  to {
-    border-right-color: transparent;
-  }
-}
-
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-
-  to {
-    border-right-color: transparent;
-  }
-}
-
-/* If the screen is a mobile device remove the animation for .IntroText & .anim-typewriter */
-
-@media (max-width: 768px) {
-  .IntroText {
-    -webkit-animation: none;
-    animation: none;
-  }
-
-  .anim-typewriter {
-    -webkit-animation: none;
-            animation: none;
-    content: "Hrushal Nikhare";
   }
 }
