@@ -70,7 +70,7 @@ TODO:
                     <br>
                     <!-- <h1 class="line-1 anim-typewriter text-[75px] m:text-9xl Meg"><b>Hrushal Nikhare</b></h1> -->
                     <h1>
-                        <h1 href="" class="typewrite text-[75px] m:text-9xl Meg" data-period="2000" data-type='[ "Hi, Im Hrushal Nikhare", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+                        <h1 class="typewrite text-6xl xl:text-9xl Meg" data-period="2000" data-type='[ "Hi, Im Hrushal", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
                             <span class="wrap"></span>
                         </h1>
                     </h1>
@@ -228,20 +228,19 @@ TODO:
                     navigator.serviceWorker.register('service-worker.js');
                 }
             });
+            //if the user is on a mobile device then set the top css property of The element with ID 'IntroText' to 0% and add the class 'sm:text-3xl' to it
+            if (window.innerWidth < 600) {
+                document.getElementById('IntroText').style.top = '0%';
+                // document.getElementById('IntroText').classList.add('sm:text-3xl');
+            }
+
+
             // If the Device is a phone Get the element With ID 'Pls' and change its src to BACK2.svg and Now get the element with ID 'IntroText' and remove it
             // if (window.innerWidth < 1025) {
             //     document.getElementById('Pls').src = 'BACK2.svg';
             //     document.getElementById('IntroText').remove();
             // }
             
-            // $(window).resize(function() {
-            // if ($(window).width() < 960) {
-            
-            // $('#Pls').attr('src', 'Back2.svg');
-            
-            // $('#IntroText').remove();
-            // }
-            // }); 
         </script>
     </div>
 </body>
