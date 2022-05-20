@@ -35,7 +35,7 @@
     <div
         class="snap-y snap-mandatory text-slate-50 text-center body-Wrapper scroll-smooth overflow-y-auto bg-[#001220]">
         <!-- Nav Bar Start -->
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id="navbar">
             <a class="navbar-brand" href="#">Hrushal <b class="text-fuchsia-500">Nikhare</b></a>
             <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -143,7 +143,7 @@
                 <span class="blue-highlight">
                     <ul>
                         <li><a href="mailto:HrushalNikhare@gmail.com">Email: HrushalNikhare@gmail.com</a></li>
-                        <li>Discord ID: Another_Random_Eevee#7237</li>
+                        <!-- <li>Discord ID: Another_Random_Eevee#7237</li> -->
                     </ul>
                 </span>
             </h1>
@@ -157,8 +157,8 @@
                 <!-- Section: Social media -->
                 <section class="mb-4">
                     <!-- Discord -->
-                    <a class="btn btn-primary btn-floating m-1 bg-[#3b5998]" href="https://discord.com/app"
-                        role="button">Discord <i class="fa-brands fa-discord"></i></a>
+                    <!-- <a class="btn btn-primary btn-floating m-1 bg-[#3b5998]" href="https://discord.com/app"
+                        role="button">Discord <i class="fa-brands fa-discord"></i></a> -->
                     <!-- Github -->
                     <a class="btn btn-primary btn-floating m-1 bg-[#333333]" href="https://github.com/Hrushal-Nikhare"
                         role="button">Github <i class="fab fa-github"></i></a>
@@ -171,7 +171,7 @@
             <!-- Grid container -->
             <!-- Copyright -->
             <div class="text-center p-3 bg-[rgba(0, 0, 0, 0.2)]">
-                © 2020 Copyright: Hrushal Nikhare
+                © 2022 Copyright: Hrushal Nikhare
             </div>
             <!-- Copyright -->
         </footer>
@@ -191,16 +191,19 @@
                 navigator.serviceWorker.register('service-worker.js');
             }
         });
-        //if the user is on a mobile device then set the top css property of The element with ID 'IntroText' to 0% and add the class 'sm:text-3xl' to it
-        if (window.innerWidth < 600) {
-            document.getElementById('IntroText').style.top = '0%';
-            // document.getElementById('IntroText').classList.add('sm:text-3xl');
+
+        // if the user is on a mobile device then set the top css property of The element with ID 'IntroText' to 0% and remove the div element with class '.navbar'
+        if (window.innerWidth < 992) {
+            document.getElementById("IntroText").style.top = "0%";
+            document.getElementById("navbar").style.display = "none";
         }
-        // If the Device is a phone Get the element With ID 'Pls' and change its src to BACK2.svg and Now get the element with ID 'IntroText' and remove it
-        // if (window.innerWidth < 1025) {
-        //     document.getElementById('Pls').src = 'BACK2.svg';
-        //     document.getElementById('IntroText').remove();
+
+
+
+        // if (window.innerWidth < 600) {
+        //     document.getElementById('IntroText').style.top = '0%';
         // }
+
     </script>
     </div>
 </body>
