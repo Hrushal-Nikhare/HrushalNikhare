@@ -201,14 +201,33 @@
     </div>
     <!-- <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62b6eb22b467e759"></script> -->
     <script>
-        $(function () {
-            $('li').on('click', function (e) {
-                e.preventDefault();
-                $('html, body').animate({
-                    scrollTop: $($(e.target).attr("href")).offset().top
-                }, 1000);
-            });
-        });
+        //$(function () {
+          //  $('li').on('click', function (e) {
+          //      e.preventDefault();
+             //   $('html, body').animate({
+             //       scrollTop: $($(e.target).attr("href")).offset().top
+           //     }, 1000);
+          //  });
+        //});
+        $(document).on('click', 'a[href^="#"]', function(e) {
+    // target element id
+    var id = $(this).attr('href');
+
+    // target element
+    var $id = $(id);
+    if ($id.length === 0) {
+        return;
+    }
+
+    // prevent standard hash navigation (avoid blinking in IE)
+    e.preventDefault();
+
+    // top position relative to the document
+    var pos = $id.offset().top;
+
+    // animated top scrolling
+    $('body, html').animate({scrollTop: pos});
+});
         window.addEventListener('load', () => {
             if ('serviceWorker' in navigator) {
                 navigator.serviceWorker.register('service-worker.js');
